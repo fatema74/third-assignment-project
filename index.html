@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +9,50 @@
   <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- google font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <!-- main css -->
+  <link rel="stylesheet" href="assete/css/all.min.css">
+  <link rel="stylesheet" href="assete/css/style.css">
+
 </head>
-<body>
-  
+
+<body class="font-lato">
+  <header class="px-20 text-white">
+    <nav class="bg-red-500 rounded-[600px] p-5">
+      <div class="header flex justify-between">
+        <div class="menu">
+          <ul class="flex font-medium text-lg">
+            <li><a href="">Home</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Shop</a></li>
+            <li><a href="">All Fruits</a></li>
+          </ul>
+        </div>
+        <div class="flex gap-5 items-center">
+          <img src="assete/img/logo.png" alt="">
+          <h3 class="font-bold text-4xl">Fruit Burst</h3>
+        </div>
+        <div class="items-center bg-white text-slate-600 p-4 w-72 space-x-14 rounded-[50px]">
+          <input type="search" name="search" placeholder="Search here" id="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </div>
+    </nav>
+    <!-- banner area start hear -->
+    <div class="hero min-h-screen"
+      style="background-image: url(assete/img/banner1.png);">
+      <div class="hero-overlay bg-opacity-60"></div>
+      <div class="hero-content text-center text-neutral-content">
+        <div class="max-w-md">
+          <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your <br> doorstep</h1>
+          <p class="mb-5">We supply highly quality organic products</p>
+          <button class="btn btn-primary">Shop Now</button>
+        </div>
+      </div>
+    </div>
+  </header>
 </body>
+
 </html>
