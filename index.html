@@ -41,15 +41,15 @@
 
 <body class="font-lato">
   <header class="md:container md:mx-auto">
-    <nav class="navbar bg-common-color rounded-[600px] p-5 my-10 text-white">
-      <div class="gap-28 max-sm:flex-col-reverse">
+    <nav class="navbar md:bg-common-color rounded-[600px] p-5 my-10 text-gray-950 md:text-white">
+      <div class="md:gap-28 max-sm:flex-row-reverse">
         <div class="menu dropdown">
           <label tabindex="0" class="btn btn-ghost lg:hidden">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"/>
             </svg>
           </label>
-          <ul tabindex="0" class="menu flex menu-sm dropdown-content text-lg text-slate-800 mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 font-medium">
+          <ul tabindex="0" class="menu flex menu-sm dropdown-content text-lg text-slate-800 mt-3 z-[1] p-2 shadow bg-base-100 rounded-box font-medium">
             <li><a href="">Home</a></li>
             <li><a href="">About Us</a></li>
             <li><a href="">Shop</a></li>
@@ -66,9 +66,9 @@
         </div>
         <div class="items-center flex gap-5">
           <img src="assete/img/logo.png" alt="">
-          <h3 class="font-bold text-4xl">Fruit Burst</h3>
+          <h3 class="font-bold text-4xl md:w-full">Fruit Burst</h3>
         </div>
-        <div class="btn btn-error bg-white text-slate-600 p-4 w-72 space-x-14 rounded-[50px]">
+        <div class="btn btn-error bg-white text-slate-600 md:w-72 w-0 rounded-[50px] invisible md:visible">
           <input type="search" name="search" placeholder="Search here" id="search">
           <i class="fa-solid fa-magnifying-glass"></i>
         </div>
@@ -383,16 +383,111 @@
             </dialog>
         </div>
       </div> 
-      </div>     
+      </div> 
+      <div class="text-center mt-10">
+        <button class="btn bg-common-color text-white">Shop All</button>
+      </div>
 </section>
-  <div class="text-center mt-10">
-    <button class="btn bg-common-color text-white">Shop All</button>
+<!-- team meet card -->
+<section>
+  <div class="hero min-h-screen my-40 rounded-xl "
+    style="background-image: url(assete/img/team.png);">
+    <div class="hero-overlay bg-opacity-60"></div>
+      <div class="text-white">
+        <h1 class="mb-5 text-5xl font-bold text-center">Meet the team section</h1>
+        <p class="mb-5 text-center">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC,
+        making it over 2000 years old.</p>
+        <div class="flex gap-20 text-center pt-10 max-sm:flex-col">
+          <!-- team 1 -->
+          <div class="">
+            <div class="flex justify-center">
+              <img src="assete/img/member1.png" alt="">
+            </div>
+            <h2 class="pt-4">Awlad Hossain</h2>
+            <span>Fruits Expert</span>
+            <div class="flex gap-4 justify-center py-2">
+              <img src="assete/img/facebook 1 (2).svg" alt="">
+              <img src="assete/img/twitter (1) 1.svg" alt="">
+              <img src="assete/img/linkedin 1 (1).svg" alt="">
+            </div>
+          </div>
+          <!-- team 2 -->
+          <div>
+            <div class="flex justify-center">
+              <img src="assete/img/member2.png" alt="">
+            </div>
+            <h2 class="pt-4">Safia Chowdhury</h2>
+            <span>Fruits Expert</span>
+            <div class="flex gap-4 justify-center py-2">
+              <img src="assete/img/facebook 1 (2).svg" alt="">
+              <img src="assete/img/twitter (1) 1.svg" alt="">
+              <img src="assete/img/linkedin 1 (1).svg" alt="">
+            </div>
+          </div>
+          <!-- team 3 -->
+          <div>
+            <div class="flex justify-center">
+              <img src="assete/img/member3.png" alt="">
+            </div>
+            <h2 class="pt-4">Rokib Hossain</h2>
+            <span>Fruits Expert</span>
+            <div class="flex gap-4 justify-center py-2">
+              <img src="assete/img/facebook 1 (2).svg" alt="">
+              <img src="assete/img/twitter (1) 1.svg" alt="">
+              <img src="assete/img/linkedin 1 (1).svg" alt="">
+            </div>
+          </div>
+          <!-- team 4 -->
+          <div>
+            <div class="flex justify-center">
+              <img src="assete/img/member4.png" alt="">
+            </div>
+            <h2 class="pt-4">Chaity</h2>
+            <span>Fruits Expert</span>
+            <div class="flex gap-4 justify-center py-2">
+              <img src="assete/img/facebook 1 (2).svg" alt="">
+              <img src="assete/img/twitter (1) 1.svg" alt="">
+              <img src="assete/img/linkedin 1 (1).svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
   </div>
+</section>
+  
 
 
 
 
   </main>
+  <!-- footer area -->
+    <footer class="footer footer-center p-10 bg-black text-base-content rounded mt-10">
+      <div class="flex gap-5">
+        <img src="assete/img/logo.png" alt="">
+        <h4 class="text-white font-bold text-4xl">Fruit Burst</h4>
+      </div>
+      <div class="grid grid-flow-col gap-6 text-white text-xl">
+        <a class="link link-hover">Home</a>
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Shop</a>
+        <a class="link link-hover">All Fruits</a>
+        <a class="link link-hover">Support</a>
+        <a class="link link-hover">My Account</a>
+      </div>
+      <div class="text-white flex gap-10">
+        <img src="assete/img/twitter 1.svg" alt="">
+        <img src="assete/img/facebook 1 (1).svg" alt="">
+        <img src="assete/img/Group 49 (1).svg" alt="">
+        <img src="assete/img/linkedin 1.svg" alt="">
+        <img src="assete/img/instagram 1.svg" alt="">
+        <img src="assete/img/apple 1.svg" alt="">
+      </div>
+      <div class="text-white">
+        <p>Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
+      </div>
+    </footer>
 </body>
 
 </html>
