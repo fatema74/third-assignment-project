@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Third Assignment project</title>
+  <!-- fav icon -->
+  <link rel="icon" href="assete/img/fruit1.png" type="image/gif" sizes="16*16">
   <!-- tailwind and daisyUI link -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
@@ -174,7 +176,7 @@
 
   <main class="md:container md:mx-auto">
     <!-- card title -->
-    <section class="py-14">
+    < class="py-14">
       <div class="flex justify-between max-sm:flex-col">
         <div>
           <h3 class="font-extrabold text-5xl">Deal of the day</h3>
@@ -183,7 +185,7 @@
         </div>
         <div class="flex gap-3">
           <div>
-            <h3 class="font-extrabold text-5xl">29</h3>
+            <h3 class="font-bold text-5xl">29</h3>
             <span>Days</span>
           </div>
           <div class="mt-3">
@@ -210,7 +212,8 @@
         </div>
       </div>
       <!-- card img and contant -->
-        <div>
+        <div class="flex gap-4 mt-10">
+          <!-- card 1 -->
           <div class="card w-96 bg-base-100 shadow-xl">
             <figure class="px-10 pt-10">
               <img src="assete/img/fruit6.png" alt="Shoes" class="rounded-xl" />
@@ -225,18 +228,42 @@
                 <i class="fa-regular fa-star"></i>
                 <i class="fa-regular fa-star"></i>
               </div>
-              <div class="card-actions">
-                <button class="btn text-red-500">Details</button>
+              <!-- dropdown area -->
+              <div class="dropdown dropdown-right dropdown-end">
+                <label tabindex="0" class="btn m-1">Details</label>
+                <div tabindex="0" class="dropdown-content z-[1] card card-compact w-64 p-2 shadow bg-base-100 text-slate-800 border border-slate-600">
+                  <div class="card-body">
+                    <figure class="px-10">
+                      <img src="assete/img/fruit6.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title border-b-2 pb-4">Apple</h2>
+                      <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                      <div class="text-red-500 text-xl">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                      </div>
+                      <div class="flex gap-2">
+                        <a class="border border-red-500 px-4 py-3 rounded-xl" href="#">Close</a>
+                        <a class="bg-common-color px-4 py-3 rounded-xl" href="#">Buy Now</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
         </div>
+        <!-- card 2 -->
         <div class="card w-96 bg-base-100 shadow-xl">
           <figure class="px-10 pt-10">
-            <img src="assete/img/fruit6.png" alt="Shoes" class="rounded-xl" />
+            <img src="assete/img/fruit7.png" alt="Shoes" class="rounded-xl" />
           </figure>
           <div class="card-body items-center text-center">
             <h2 class="card-title border-b-2 pb-4">12.90$ - 18.85$</h2>
-            <p>Apples</p>
+            <p>Orange</p>
             <div class="text-red-500 text-xl">
               <i class="fa-solid fa-star"></i>
               <i class="fa-regular fa-star-half-stroke"></i>
@@ -244,18 +271,42 @@
               <i class="fa-regular fa-star"></i>
               <i class="fa-regular fa-star"></i>
             </div>
-            <div class="card-actions">
-              <button class="btn text-red-500">Details</button>
+            <!-- dropdown area -->
+            <div class="dropdown dropdown-left dropdown-end">
+              <label tabindex="0" class="btn m-1">Details</label>
+              <div tabindex="0" class="dropdown-content z-[1] card card-compact w-64 p-2 shadow bg-base-100 text-slate-800 border border-slate-600">
+                <div class="card-body">
+                  <figure class="px-10">
+                    <img src="assete/img/fruit7.png" alt="Shoes" class="rounded-xl" />
+                  </figure>
+                  <div class="card-body items-center text-center">
+                    <h2 class="card-title">Orange</h2>
+                    <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                    <div class="text-red-500 text-xl">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star-half-stroke"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="flex gap-2">
+                      <a class="border border-red-500 px-4 py-3 rounded-xl" href="#">Close</a>
+                      <a class="bg-common-color px-4 py-3 rounded-xl" href="#">Buy Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+        <!-- card 3 -->
         <div class="card w-96 bg-base-100 shadow-xl">
           <figure class="px-10 pt-10">
-            <img src="assete/img/fruit6.png" alt="Shoes" class="rounded-xl" />
+            <img src="assete/img/fruit8.png" alt="Shoes" class="rounded-xl" />
           </figure>
           <div class="card-body items-center text-center">
             <h2 class="card-title border-b-2 pb-4">12.90$ - 18.85$</h2>
-            <p>Apples</p>
+            <p>Red Dragon</p>
             <div class="text-red-500 text-xl">
               <i class="fa-solid fa-star"></i>
               <i class="fa-regular fa-star-half-stroke"></i>
@@ -263,22 +314,73 @@
               <i class="fa-regular fa-star"></i>
               <i class="fa-regular fa-star"></i>
             </div>
-            <div class="card-actions">
-              <button class="btn text-red-500">Details</button>
-            </div>
-            <div class="">
-              <img src="assete/img/fruit6.png" alt="">
-              <h4>12.90$ - 18.85$</h4>
-              <p>Apples</p>
-              <div class="text-red-500 text-xl">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star-half-stroke"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
+            <!-- dropdown area -->
+            <div class="dropdown dropdown-left dropdown-end">
+              <label tabindex="0" class="btn m-1">Details</label>
+              <div tabindex="0" class="dropdown-content z-[1] card card-compact w-64 p-2 shadow bg-base-100 text-slate-800 border border-slate-600">
+                <div class="card-body">
+                  <figure class="px-10">
+                    <img src="assete/img/fruit8.png" alt="Shoes" class="rounded-xl" />
+                  </figure>
+                  <div class="card-body items-center text-center">
+                    <h2 class="card-title border-b-2 pb-4">Red Dragon</h2>
+                    <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                    <div class="text-red-500 text-xl">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star-half-stroke"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="flex gap-2">
+                      <a class="border border-red-500 px-4 py-3 rounded-xl" href="#">Close</a>
+                      <a class="bg-common-color px-4 py-3 rounded-xl" href="#">Buy Now</a>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <button>Close</button>
-              <button>Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- card 4 -->
+        <div class="card w-96 bg-base-100 shadow-xl">
+          <figure class="px-10 pt-10">
+            <img src="assete/img/fruit9.png" alt="Shoes" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title border-b-2 pb-4">12.90$ - 18.85$</h2>
+            <p>Banana</p>
+            <div class="text-red-500 text-xl">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star-half-stroke"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <!-- dropdown area -->
+            <div class="dropdown dropdown-left dropdown-end">
+              <label tabindex="0" class="btn m-1">Details</label>
+              <div tabindex="0" class="dropdown-content z-[1] card card-compact w-64 p-2 shadow bg-base-100 text-slate-800 border border-slate-600">
+                <div class="card-body">
+                  <figure class="px-10">
+                    <img src="assete/img/fruit9.png" alt="Shoes" class="rounded-xl" />
+                  </figure>
+                  <div class="card-body items-center text-center">
+                    <h2 class="card-title border-b-2 pb-4">Banana</h2>
+                    <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                    <div class="text-red-500 text-xl">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star-half-stroke"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="flex gap-2">
+                      <a class="border border-red-500 px-4 py-3 rounded-xl" href="#">Close</a>
+                      <a class="bg-common-color px-4 py-3 rounded-xl" href="#">Buy Now</a>
+                    </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
